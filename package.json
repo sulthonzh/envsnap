@@ -1,0 +1,24 @@
+{
+  "name": "envsnap",
+  "version": "1.0.0",
+  "description": "Snapshot your dev environment and diff it — solves 'works on my machine' for good",
+  "main": "dist/index.js",
+  "bin": {
+    "envsnap": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/test/*.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["developer-tools", "environment", "snapshot", "diff", "cli", "debugging"],
+  "author": "sulthonzh",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
